@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheet/tables/TableHight.css';
+import '../../stylesheet/tables/TableHighlight.css';
 
 function TableHighlight(props) {
 	return (

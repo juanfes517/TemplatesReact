@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import TableHight from './components/tables/tableHight';
+import TableHighlight from './components/tables/TableHighlight';
+import AnimatedTextFill from './components/animations/AnimatedTextFill'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <TableHight />
-  );
+	return (
+		<AnimatedTextFill />
+	);
 }
 
 export default App
