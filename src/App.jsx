@@ -1,10 +1,11 @@
 import TableHighlight from './components/tables/TableHighlight';
-import AnimatedTextFill from './components/animations/AnimatedTextFill'
-import AnimatedLoading from './components/animations/AnimatedLoading'
+import AnimatedTextFill from './components/animations/AnimatedTextFill';
+import AnimatedLoading from './components/animations/AnimatedLoading';
+import SideBarHoverEffect from './components/sidebars/SideBarHoverEffect';
 
 function App() {
 	return (
-		<AnimatedLoading />
+		<SideBarHoverEffect />
 	);
 }
 
