@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Neuton|Oswald");
 
-body {
+.animated-text-fill {
   height: 100vh;
   background: #090d00;
   display: flex;
@@ -8,7 +8,7 @@ body {
   align-items: center;
 }
 
-p {
+.animated-text-fill p {
   width: 40em;
   text-align: center;
   text-transform: uppercase;
@@ -21,7 +21,7 @@ p {
   padding: 1.5em;
 }
 
-p span {
+.animated-text-fill p span {
   font: 700 4em/1 "Oswald", sans-serif;
   letter-spacing: 0;
   padding: 0.25rm 0 0.325em;
@@ -30,11 +30,12 @@ p span {
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   background: url("https://codetheworld.io/wp-content/uploads/2023/11/rNPwjWM-animated-text-fill.png") repeat-y;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: anim 80s linear infinite;
 }
 
-@-webkit-keyframes anim {
+@keyframes anim {
   0% {
     background-position: 0% 50%;
   }

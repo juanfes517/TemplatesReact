@@ -1,4 +1,4 @@
-table {
+.table-Highlight table {
     width: 800px;
     font-family: sans-serif;
     font-weight: 100;
@@ -7,30 +7,30 @@ table {
     box-shadow: 0 0 20px #0000001a;
 }
 
-th,
-td {
+.table-Highlight th,
+.table-Highlight td {
     background-color: #ffffff33;
     padding: 15px;
     /*color: #fff;*/
 }
 
-th {
+.table-Highlight th {
     text-align: left;
 }
 
-thead th {
+.table-Highlight thead th {
     background-color: #55608f;
 }
 
-tbody tr:hover {
+.table-Highlight tbody tr:hover {
     background-color: #68656525;
 }
 
-tbody td {
+.table-Highlight tbody td {
     position: relative;
 }
 
-tbody td:hover::before {
+.table-Highlight tbody td:hover::before {
     content: "";
     position: absolute;
     background-color: #68656525;
