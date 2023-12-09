@@ -4,10 +4,11 @@ import AnimatedLoading from './components/animations/AnimatedLoading';
 import SideBarHoverEffect from './components/sidebars/SideBarHoverEffect';
 import DropdownMenu from './components/menus/DropdownMenu';
 import LoginRegisterTransition from './components/forms/LoginRegisterTransition';
+import InputFloating from './components/inputs/InputFloating';
 
 function App() {
 	return (
-		<LoginRegisterTransition />
+		<InputFloating />
 	);
 }
 

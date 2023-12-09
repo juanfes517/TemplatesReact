@@ -20,7 +20,7 @@ function LoginRegisterTransition(props) {
 
   return (
     <div className='div-LoginRegisterTransition'>
-      <div className={`container ${containerActive}`} id='container'>
+      <div className={`container ${containerActive}`} >
         <div className='form-container sign-up' >
           <form>
             <h1>Create Account</h1>
@@ -55,7 +55,7 @@ function LoginRegisterTransition(props) {
         <div className='toggle-container' >
           <div className='toggle'>
             <div className='toggle-panel toggle-left'>
-              <h1>Welcome Back!</h1>
+              <h1>Are you Firulais?</h1>
               <p>Enter your personal details to use all of site features</p>
               <button className='hidden' onClick={desactivateContainer}>Sign In</button>
             </div>

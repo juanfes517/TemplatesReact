@@ -1,0 +1,41 @@
+.div-input-floating {
+  padding: 20px;
+  background-color: #0d1019;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper input {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #fcc23f;
+  border-radius: 5px;
+  width: 300px;
+  color: #eee;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.wrapper label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  padding: 0 4px;
+  color: #fcc23f;
+  background-color: #0d1019;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.wrapper input:not(:placeholder-shown)~label,
+.wrapper input:focus~label {
+  top: -8px;
+  font-size: 13px;
+}
