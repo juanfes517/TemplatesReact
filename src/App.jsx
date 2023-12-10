@@ -5,10 +5,11 @@ import SideBarHoverEffect from './components/sidebars/SideBarHoverEffect';
 import DropdownMenu from './components/menus/DropdownMenu';
 import LoginRegisterTransition from './components/forms/LoginRegisterTransition';
 import InputFloating from './components/inputs/InputFloating';
+import PasswordVisibility from './components/inputs/PasswordVisibility';
 
 function App() {
 	return (
-		<InputFloating />
+		<PasswordVisibility />
 	);
 }
 

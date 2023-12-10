@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../../stylesheet/forms/LoginRegisterTransition.css';
 
-//First 'npm install --save @fortawesome/fontawesome-free'
+//first, run this: 'npm install --save @fortawesome/fontawesome-free'
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Importa los estilos de Font Awesome
 
 function LoginRegisterTransition(props) {
