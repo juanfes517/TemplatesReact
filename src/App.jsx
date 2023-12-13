@@ -6,10 +6,11 @@ import DropdownMenu from './components/menus/DropdownMenu';
 import LoginRegisterTransition from './components/forms/LoginRegisterTransition';
 import InputFloating from './components/inputs/InputFloating';
 import PasswordVisibility from './components/inputs/PasswordVisibility';
+import NavigationMenuIndicator from './components/menus/NavigationMenuIndicator';
 
 function App() {
 	return (
-		<PasswordVisibility />
+		<NavigationMenuIndicator />
 	);
 }
 
