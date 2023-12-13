@@ -7,10 +7,11 @@ import LoginRegisterTransition from './components/forms/LoginRegisterTransition'
 import InputFloating from './components/inputs/InputFloating';
 import PasswordVisibility from './components/inputs/PasswordVisibility';
 import NavigationMenuIndicator from './components/menus/NavigationMenuIndicator';
+import XRayedCat from './components/animations/XRayedCat';
 
 function App() {
 	return (
-		<NavigationMenuIndicator />
+		<XRayedCat />
 	);
 }
 
