@@ -9,10 +9,11 @@ import PasswordVisibility from './components/inputs/PasswordVisibility';
 import NavigationMenuIndicator from './components/menus/NavigationMenuIndicator';
 import XRayedCat from './components/animations/XRayedCat';
 import AccordionSlider from './components/sliders/AccordionSlider';
+import LoginTranslucent from './components/forms/LoginTranslucent';
 
 function App() {
 	return (
-		<AccordionSlider />
+		<LoginTranslucent />
 	);
 }
 
