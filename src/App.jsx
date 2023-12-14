@@ -8,10 +8,11 @@ import InputFloating from './components/inputs/InputFloating';
 import PasswordVisibility from './components/inputs/PasswordVisibility';
 import NavigationMenuIndicator from './components/menus/NavigationMenuIndicator';
 import XRayedCat from './components/animations/XRayedCat';
+import AccordionSlider from './components/sliders/AccordionSlider';
 
 function App() {
 	return (
-		<XRayedCat />
+		<AccordionSlider />
 	);
 }
 
