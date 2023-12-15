@@ -10,10 +10,11 @@ import NavigationMenuIndicator from './components/menus/NavigationMenuIndicator'
 import XRayedCat from './components/animations/XRayedCat';
 import AccordionSlider from './components/sliders/AccordionSlider';
 import LoginTranslucent from './components/forms/LoginTranslucent';
+import HoverableSidebar from './components/sidebars/HoverableSidebar';
 
 function App() {
 	return (
-		<LoginTranslucent />
+		<HoverableSidebar />
 	);
 }
 
