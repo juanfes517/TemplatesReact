@@ -11,10 +11,17 @@ import XRayedCat from './components/animations/XRayedCat';
 import AccordionSlider from './components/sliders/AccordionSlider';
 import LoginTranslucent from './components/forms/LoginTranslucent';
 import HoverableSidebar from './components/sidebars/HoverableSidebar';
+import SideBarIcons from './components/main/SideBarIcons';
+import SideBarList from './components/main/SideBarList';
 
 function App() {
 	return (
-		<HoverableSidebar />
+		<div>
+			<div>
+				<SideBarIcons />
+			</div>
+			
+		</div>
 	);
 }
 

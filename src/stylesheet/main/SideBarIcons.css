@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 78px;
+  padding: 6px 14px;
+  background: #0c2214;
+  z-index: 99;
+}
+
+.sidebar-icons i {
+  color: #fff;
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*line-height: 40px;*/
+}
+
+.sidebar-icons ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-icons li .tooltip {
+  position: absolute;
+  top: -30px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  pointer-events: none;
+  transition: 0;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.sidebar-icons li {
+  list-style: none;
+}
+
+.sidebar-icons li.list-element {
+  position: relative;
+  margin: 8px 0;
+}
+
+.sidebar-icons .list-element:not(.element-active):hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar-icons .list-element:not(.element-active):hover {
+  background-color: #27743d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar-icons .list-image {
+  position: fixed;
+  bottom: 0px;
+  padding: 2px;
+}
+
+.sidebar-icons li img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar-icons li .icon-container {
+  transition: 0.5s
+}
+
+.sidebar-icons li.element-active .icon-container {
+  position: relative;
+  background-color: #27743d;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: scale(1.2) translateX(25px);
+}
