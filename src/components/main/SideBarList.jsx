@@ -1,11 +1,22 @@
 import React from 'react';
+import { getListComponents } from './Designs';
 import '../../stylesheet/main/SideBarList.css';
 
 function SideBarList(props) {
+
+
   return (
-    <h1 className='h'>
-      Hello Firulais!
-    </h1>
+    <div className={`div-sidebar-list ${props.classSidebarList}`}>
+      <p className='title'>{props.selectedItem}</p>
+      {
+        getListComponents(props.selectedItem)?.map((item, index) => (
+          <div key={index}>
+            <span>{item}</span>
+          </div>
+        ))
+      }
+    </div>
+
   );
 }
 

@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import TableHighlight from './components/tables/TableHighlight';
 import AnimatedTextFill from './components/animations/AnimatedTextFill';
 import AnimatedLoading from './components/animations/AnimatedLoading';
@@ -15,12 +17,25 @@ import SideBarIcons from './components/main/SideBarIcons';
 import SideBarList from './components/main/SideBarList';
 
 function App() {
+
+	const [classSidebarList, setClassSidebarList] = useState('close');
+	const [selectedItemSidebarIcons, setSelectedItemSidebarIcons] = useState('');
+
+	const openOrCloseSidebarList = (selectedText, newClass) => {
+		setClassSidebarList(newClass);
+		setSelectedItemSidebarIcons(selectedText);
+	}
+
 	return (
-		<div>
+		<div className='div-main'>
 			<div>
-				<SideBarIcons />
+				<SideBarIcons openOrCloseSidebarList={openOrCloseSidebarList} />
 			</div>
-			
+			<div>
+				<SideBarList 
+					classSidebarList={classSidebarList} 
+					selectedItem={selectedItemSidebarIcons} />
+			</div>
 		</div>
 	);
 }

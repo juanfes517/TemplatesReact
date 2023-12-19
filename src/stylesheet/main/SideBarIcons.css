@@ -33,6 +33,7 @@
 .sidebar-icons ul {
   display: flex;
   flex-direction: column;
+  margin-top: 65px; 
 }
 
 .sidebar-icons li .tooltip {
@@ -73,6 +74,7 @@
   background-color: #27743d;
   border-radius: 4px;
   cursor: pointer;
+  transition: 1.0s;
 }
 
 .sidebar-icons .list-image {
@@ -95,7 +97,7 @@
 .sidebar-icons li.element-active .icon-container {
   position: relative;
   background-color: #27743d;
-  border-radius: 50%;
+  border-radius: 30%;
   transition: 0.5s;
-  transform: scale(1.2) translateX(25px);
+  transform: scale(1.2) translateX(20px);
 }

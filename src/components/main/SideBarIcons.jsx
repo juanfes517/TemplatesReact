@@ -7,20 +7,34 @@ function SideBarIcons(props) {
 
   const [lastSelectedItem, setLastSelectedItem] = useState(null);
 
-  const handleClick = (event) => {
-    assignClass(event);
+  //Verifica si un elemento tiene una clase
+  const hasClassName = (element, className) => {
+    return element.classList.contains(className);
   }
 
-  const assignClass = (event) => {
+  //Verifica si el mismo elemento fue seleccionado dos veces consecutivas
+  const areItemsDifferent = (selectedItem) => {
+    return lastSelectedItem !== null && lastSelectedItem !== selectedItem;
+  }
+
+  const handleClick = (event) => {
+    let newClass = '';
     const selectedItem = event.currentTarget;
-    if (selectedItem.classList.contains('element-active')) {
+    const tooltipText = selectedItem.querySelector('.tooltip').innerText;
+
+    if (hasClassName(selectedItem, 'element-active')) {
       selectedItem.classList.remove('element-active');
-    } else{
+      newClass = 'close';
+    } else {
       selectedItem.classList.add('element-active');
-      if (lastSelectedItem !== null && lastSelectedItem !== selectedItem){
+      newClass = 'open';
+      if (areItemsDifferent(selectedItem)){
         lastSelectedItem.classList.remove('element-active');
+      } else {
+        newClass = 'open';
       }
     }
+    props.openOrCloseSidebarList(tooltipText, newClass);
     setLastSelectedItem(selectedItem);
   }
 

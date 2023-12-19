@@ -1,3 +1,38 @@
-.h {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.div-sidebar-list.open {
+  position: relative;
+  left: 78px;
+  background: #27743d;
+  width: 250px;
+  height: 100vh;
+  transition: 0.5s;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.div-sidebar-list.close {
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 100vh;
+}
+
+.div-sidebar-list .title {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: 0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+/* .div-sidebar-list.close .title {
+  opacity: 0;
+} */
