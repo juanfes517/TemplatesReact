@@ -64,6 +64,6 @@ export function getComponent(component) {
     case 'CatProfile':
       return (<div className='cat-profile'></div>)
     default:
-      return (<div><h1>Hello Firulais!</h1></div>)
+      return (<div></div>)
   }
 }
