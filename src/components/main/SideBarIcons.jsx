@@ -28,7 +28,7 @@ function SideBarIcons(props) {
     } else {
       selectedItem.classList.add('element-active');
       newClass = 'open';
-      if (areItemsDifferent(selectedItem)){
+      if (areItemsDifferent(selectedItem)) {
         lastSelectedItem.classList.remove('element-active');
       } else {
         newClass = 'open';
@@ -41,6 +41,9 @@ function SideBarIcons(props) {
   return (
     <div className="sidebar-icons">
       <ul>
+        <li className='list-image'>
+          <img src={ProfileImage} alt='profileImg' />
+        </li>
         <li className='list-element' onClick={handleClick}>
           <div className='icon-container'>
             <i className="fa-solid fa-hat-wizard"></i>
@@ -83,10 +86,6 @@ function SideBarIcons(props) {
           </div>
           <span className='tooltip'>Tables</span>
         </li>
-        <li className='list-image'>
-          <img src={ProfileImage} alt='profileImg' />
-        </li>
-        <div className='indicator-icons'></div>
       </ul>
     </div>
   );

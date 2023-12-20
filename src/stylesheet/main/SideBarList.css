@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .div-sidebar-list.open {
-  position: relative;
+  position: fixed;
   left: 78px;
   background: #27743d;
   width: 250px;
@@ -12,11 +12,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 99;
 }
 
 .div-sidebar-list.close {
   width: 0;
-  overflow: hidden;
   transition: 0.5s;
   height: 100vh;
 }
@@ -31,8 +31,41 @@
   padding-bottom: 5px;
   margin-bottom: 15px;
   border-bottom: 2px solid #000;
+  visibility: visible;
+  transition: visibility 0s 0.3s;
 }
 
-/* .div-sidebar-list.close .title {
+.div-sidebar-list.close .title {
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.div-sidebar-list .component-sidebar-list {
+  width: 100%;
+  padding: 5px 8px 1px 8px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px double #0c2214;
+  border-radius: 4px;
+  user-select: none;
+  visibility: visible;
+  transition: visibility 0s 0.3s;
+}
+
+.div-sidebar-list.close .component-sidebar-list {
+  visibility: hidden;
+  transition: 0s;
+}
+
+.div-sidebar-list .component-sidebar-list:hover {
+  color: #fff;
+}
+
+.div-sidebar-list .component-sidebar-list:active {
+  background: #2c8d47;
+}
+
+.div-sidebar-list.close .component-sidebar-list {
   opacity: 0;
-} */
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 import TableHighlight from './components/tables/TableHighlight';
 import AnimatedTextFill from './components/animations/AnimatedTextFill';
@@ -15,6 +16,7 @@ import LoginTranslucent from './components/forms/LoginTranslucent';
 import HoverableSidebar from './components/sidebars/HoverableSidebar';
 import SideBarIcons from './components/main/SideBarIcons';
 import SideBarList from './components/main/SideBarList';
+import MainSection from './components/main/MainSection';
 
 function App() {
 
@@ -28,14 +30,11 @@ function App() {
 
 	return (
 		<div className='div-main'>
-			<div>
 				<SideBarIcons openOrCloseSidebarList={openOrCloseSidebarList} />
-			</div>
-			<div>
 				<SideBarList 
 					classSidebarList={classSidebarList} 
 					selectedItem={selectedItemSidebarIcons} />
-			</div>
+				<MainSection />
 		</div>
 	);
 }

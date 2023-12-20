@@ -10,7 +10,7 @@ function SideBarList(props) {
       <p className='title'>{props.selectedItem}</p>
       {
         getListComponents(props.selectedItem)?.map((item, index) => (
-          <div key={index}>
+          <div key={index} className='component-sidebar-list'>
             <span>{item}</span>
           </div>
         ))

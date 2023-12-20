@@ -55,6 +55,8 @@
 
 .sidebar-icons li {
   list-style: none;
+  border-radius: 20%;
+  cursor: pointer;
 }
 
 .sidebar-icons li.list-element {
@@ -72,14 +74,12 @@
 
 .sidebar-icons .list-element:not(.element-active):hover {
   background-color: #27743d;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 1.0s;
+  border-radius: 20%;
 }
 
 .sidebar-icons .list-image {
   position: fixed;
-  bottom: 0px;
+  top: 10px;
   padding: 2px;
 }
 
@@ -91,13 +91,12 @@
 }
 
 .sidebar-icons li .icon-container {
-  transition: 0.5s
+  transition: 0.25s;
 }
 
 .sidebar-icons li.element-active .icon-container {
   position: relative;
   background-color: #27743d;
-  border-radius: 30%;
-  transition: 0.5s;
+  border-radius: 20%;
   transform: scale(1.2) translateX(20px);
 }
