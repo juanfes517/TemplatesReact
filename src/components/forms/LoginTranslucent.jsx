@@ -26,7 +26,7 @@ function LoginTranslucent(props) {
                 <input type='checkbox' /> Recordar</label> <a href='#'>Olvidé mi contraseña</a>
               
             </div>
-            <button>Log in</button>
+            <button type='button'>Log in</button>
             <div className='register'>
               <p>
                 No tengo una cuenta (<a href='#'>Resgistrarse</a>)

@@ -34,7 +34,7 @@ function LoginRegisterTransition(props) {
             <input type='text' placeholder='Name' />
             <input type='email' placeholder='Email' />
             <input type='password' placeholder='Password' />
-            <button>Sign Up</button>
+            <button type='button'>Sign Up</button>
           </form>
         </div>
         <div className='form-container sign-in' >
@@ -49,7 +49,7 @@ function LoginRegisterTransition(props) {
             <span>Or use your email and password</span>
             <input type='email' placeholder='Email' />
             <input type='password' placeholder='Password' />
-            <button>Sign In</button>
+            <button type='button'>Sign In</button>
           </form>
         </div>
         <div className='toggle-container' >

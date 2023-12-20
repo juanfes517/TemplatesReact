@@ -12,10 +12,10 @@
 }
 
 .hoverable-sidebar {
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 100vh;
   width: 78px;
   background: #11101d;
   padding: 6px 14px;
@@ -200,11 +200,11 @@
 }
 
 .hoverable-sidebar li.profile {
-  position: fixed;
+  position: relative;
   height: 60px;
   width: 78px;
-  left: 0;
-  bottom: -8px;
+  left: -14px;
+  bottom: -75px;
   padding: 10px 14px;
   background: #1d1b31;
   transition: all 0.5s ease;

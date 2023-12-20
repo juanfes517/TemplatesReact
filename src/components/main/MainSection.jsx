@@ -1,13 +1,11 @@
 import React from 'react';
 import '../../stylesheet/main/MainSection.css';
+import { getComponent } from './Designs';
 
 function MainSection(props) {
   return (
-    <div className='div-main-section'>
-      <h1 className='h'>
-        Hello Firulais!
-      </h1>
-
+    <div className={`div-main-section ${props.classMainSection}`}>
+      {getComponent(props.selectedComponent)}
     </div>
   );
 }

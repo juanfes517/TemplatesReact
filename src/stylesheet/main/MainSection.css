@@ -1,12 +1,23 @@
-.h {
-  background-color: red;
-}
-
 .div-main-section {
   position: absolute;
   top: 0;
-  left: 328px;
-  /* left: 78px; */
+  height: 100vh;
+}
+
+.div-main-section.close {
+  left: 78px;
   width: calc(100% - 78px);
+  transition: 0.2s;
+}
+
+.div-main-section.open {
+  left: 328px;
+  width: calc(100% - 328px);
+  transition: 0.5s;
+}
+
+.div-main-section .cat-profile {
+  background: url('../../images/Gato.png');
+  width: 100%;
   height: 100vh;
 }

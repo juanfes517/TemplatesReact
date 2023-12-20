@@ -41,7 +41,7 @@ function SideBarIcons(props) {
   return (
     <div className="sidebar-icons">
       <ul>
-        <li className='list-image'>
+        <li className='list-image' onClick={() => props.handleCat()}>
           <img src={ProfileImage} alt='profileImg' />
         </li>
         <li className='list-element' onClick={handleClick}>

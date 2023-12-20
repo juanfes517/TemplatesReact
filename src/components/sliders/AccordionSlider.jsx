@@ -17,7 +17,7 @@ function AccordionSlider(props) {
           <div>
             <a href='#'>
               <h2>Otro gato</h2>
-              <p>Otro gato que elegio el camino de la violencia</p>
+              <p>Otro gato que elijio el camino de la violencia</p>
             </a>
           </div>
         </li>
